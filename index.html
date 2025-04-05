@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Visit Egypt - Discover the wonders of ancient Egyptian civilization, explore the majestic Nile River, the Pyramids, and unique tourist attractions. Our website offers a comprehensive travel guide for the best destinations and experiences in Egypt for both local and international visitors."
+    />
+    <meta
+      name="keywords"
+      content="Egypt, tourism, Visit Egypt, pyramids, Nile River, travel guide, Egyptian attractions, ancient history, culture"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:title" content="Visit Egypt" />
+    <meta
+      property="og:description"
+      content="Discover the wonders of ancient Egyptian civilization and explore the majestic Nile River, Pyramids, and unique attractions with our comprehensive travel guide."
+    />
+    <meta property="og:image" content="./assets/images/pyramids.webp" />
+    <meta property="og:url" content="./assets/images/pyramids.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Visit Egypt" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/pyramids.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Egypt</title>
+  </head>
+  <body>
+    <header class="flex justify-between items-center p-6">
+      <div class="title flex justify-center items-center">
+        <h1 class="text-4xl font-bold"><span>Visit</span> Egypt</h1>
+        <img
+          class="ml-2"
+          width="38"
+          height="38"
+          src="https://img.icons8.com/pulsar-color/48/pyramids.png"
+          alt="pyramids"
+        />
+      </div>
+      <ul class="links flex justify-between items-center hidden md:flex">
+        <li class="link"><a href="#home" class="active">Home</a></li>
+        <li class="link"><a href="#destinations">Destinations</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#testimonials">Testimonials</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
+      <div
+        class="bars_menu flex justify-center items-center md:hidden"
+        id="btn"
+      >
+        <img src="./assets/images/bars-svgrepo-com.svg" alt="bars Menu" />
+      </div>
+      <ul
+        class="links flex-col absolute bg-[var(--headerColor)] w-full left-0 top-[88px] overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out md:hidden"
+      >
+        <li class="link border-b border-[var(--colortext)] p-2 text-center">
+          <a href="#home" class="active">Home</a>
+        </li>
+        <li class="link border-b border-[var(--colortext)] p-2 text-center">
+          <a href="#destinations">Destinations</a>
+        </li>
+        <li class="link border-b border-[var(--colortext)] p-2 text-center">
+          <a href="#about">About</a>
+        </li>
+        <li class="link border-b border-[var(--colortext)] p-2 text-center">
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li class="link border-b border-[var(--colortext)] p-2 text-center">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <!-- End Header -->
+    <section class="landing relative h-96 max-h-96 animate-section" id="home">
+      <div class="container flex justify-center flex-col items-center p-6">
+        <h1>Discover the Wonders of <span> Egypt</span></h1>
+        <p>
+          Explore ancient treasures, vibrant culture, and breathtaking
+          landscapes
+        </p>
+        <a href="#">Plan Your Journey</a>
+      </div>
+    </section>
+    <!-- End Landing -->
+    <section class="destinations p-7 animate-section" id="destinations">
+      <div class="flex justify-center items-center">
+        <h1 class="text-5xl font-bold mb-8 text-blue-800">Top Destinations</h1>
+      </div>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/pyramids.webp"
+                alt="Pyramids of Giza"
+                class="w-full object-cover rounded-lg shadow-lg"
+                loading="lazy"
+              />
+              <h3 class="text-4xl my-5">Pryamids In Geza</h3>
+              <p class="text-blue-500 text-3xl">
+                Experience the last wonder of the ancient world with a visit to
+                the majestic pyramids.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Luxor.webp"
+                alt=""
+                class="w-full object-cover"
+                loading="lazy"
+              />
+              <h3 class="text-4xl my-5">Luxor</h3>
+              <p class="text-blue-500 text-3xl">
+                Explore ancient temples and tombs in the world's greatest
+                open-air museum.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Abu Simbel.webp"
+                alt=""
+                class="w-full object-cover"
+                loading="lazy"
+              />
+              <h3 class="text-4xl my-5">Abu Simbel</h3>
+              <p class="text-blue-500 text-3xl">
+                Marvel at the colossal temples relocated to preserve a piece of
+                ancient history.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/Sharm El-Sheikh.webp"
+                alt=""
+                class="w-full object-cover"
+                loading="lazy"
+              />
+              <h3 class="text-4xl my-5">Sharm El-Sheikh</h3>
+              <p class="text-blue-500 text-3xl">
+                Enjoy pristine beaches and vibrant coral reefs in one of the Red
+                Sea's top resorts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+    <section
+      class="about p-7 flex items-center flex-col animate-section"
+      id="about"
+    >
+      <h1 class="text-5xl font-bold mb-8 text-amber-400 underline">About us</h1>
+      <div class="container flex justify-between items-center">
+        <div class="photo">
+          <img
+            src="./assets/images/Egyptian Sphinx.webp"
+            alt="Egyptian Sphinx"
+            loading="lazy"
+          />
+        </div>
+        <div class="text_about">
+          <h1>Discover the Magic of Egypt with Visit Egypt</h1>
+          <p class="text-white">
+            Welcome to <span class="text-amber-400">Visit Egypt</span>, your
+            comprehensive guide to exploring Egypt's timeless treasures. From
+            the majestic pyramids of Giza to the enchanting beaches of the Red
+            Sea, we're here to lead you to the most beautiful destinations and
+            landmarks that the land of the pharaohs has to offer. We strive to
+            provide accurate information and valuable tips to make your journey
+            to Egypt unforgettable
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials p-7 animate-section" id="testimonials">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-amber-400 underline mb-8">
+          Testimonials
+        </h2>
+        <div class="flex flex-col md:flex-row gap-6 justify-center">
+          <div
+            class="testimonial p-6 bg-gray-800 text-white rounded-lg shadow-lg md:w-1/3"
+          >
+            <p class="mb-4">
+              "Visit Egypt made my trip unforgettable! The recommendations and
+              insights were invaluable."
+            </p>
+            <h4 class="font-bold">- John Doe</h4>
+          </div>
+          <div
+            class="testimonial p-6 bg-gray-800 text-white rounded-lg shadow-lg md:w-1/3"
+          >
+            <p class="mb-4">
+              "A truly comprehensive guide. I discovered hidden gems that I
+              wouldn't have known otherwise."
+            </p>
+            <h4 class="font-bold">- Jane Smith</h4>
+          </div>
+          <div
+            class="testimonial p-6 bg-gray-800 text-white rounded-lg shadow-lg md:w-1/3"
+          >
+            <p class="mb-4">
+              "The site is beautifully designed and very user-friendly. I highly
+              recommend it!"
+            </p>
+            <h4 class="font-bold">- Ahmed Ali</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+    <section
+      id="contact"
+      class="contact-section flex flex-col items-center justify-center animate-section"
+    >
+      <div class="container">
+        <h2 class="text-3xl underline font-semibold">Contact Us</h2>
+        <p class="mb-6">
+          If you have any questions or need assistance planning your trip to
+          Egypt, our team is ready to help. Feel free to reach out to us using
+          the form below or through our direct contact information.
+        </p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number (Optional)"
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer bg-gray-900 text-white py-10">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center px-4"
+      >
+        <!-- About Section -->
+        <div class="footer-about mb-6 md:mb-0">
+          <h3 class="text-2xl font-bold text-amber-400">Visit Egypt</h3>
+          <p class="mt-2 text-gray-300">
+            Discover the timeless wonders and vibrant culture of Egypt. Your
+            journey to the land of the pharaohs starts here.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-links mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold text-amber-400">Quick Links</h3>
+          <ul class="mt-2 space-y-2">
+            <li>
+              <a href="#home" class="hover:text-amber-400 transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#destinations"
+                class="hover:text-amber-400 transition-colors"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:text-amber-400 transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-amber-400 transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h3 class="text-xl font-semibold text-amber-400">Follow Us</h3>
+          <div class="mt-2 flex space-x-4 md:items-center">
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="hover:text-amber-400 transition-colors"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom border-t border-gray-700 mt-6 pt-4">
+        <div class="container mx-auto text-center text-gray-500">
+          <p>
+            &copy; <span id="year"></span> Visit Egypt. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
